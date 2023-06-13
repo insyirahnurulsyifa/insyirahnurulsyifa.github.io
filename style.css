@@ -1,0 +1,398 @@
+/* selamat pusing :) */
+
+* {
+    font-family: 'KoPub Batang';
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #F8F3EC;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.layar-dalam {
+    width: 1200px;
+}
+.layar-penuh {
+    width: 100%;
+}
+
+/* ini buat atur navbar */
+nav {
+    z-index: 100;
+    text-align: center;
+    position: fixed;
+    background: #F9E0BB;
+    line-height: 60px;
+    width: 100%;
+}
+
+nav .menu {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #2C2C2C;
+}
+
+nav .menu-left {
+    float: left;
+    line-height: 55px;
+    max-width: 600px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+nav .menu-left ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav .menu-left ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+
+nav .logo {
+    float: left;
+    position: relative;
+    text-align: center;
+    margin-right: 130px;
+}
+
+nav .logo h1 {
+    font-family: 'against';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #2C2C2C;
+    line-height: 35px;
+}
+
+nav .menu-right {
+    float: right;
+    line-height: 55px;
+    max-width: 600px;
+    margin-top: 10px;
+}
+nav .menu-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav .menu-right ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+
+nav img {
+    width: 20px;
+    padding: 0px 15px 0px 15px;
+    vertical-align: middle;
+}
+
+nav .menu-left ul li a {
+    color: #2C2C2C;
+    text-align: center;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+    font-family: 'Shanti';
+    font-size: 15px;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* pengaturan header (bg) */
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+header .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+header .bg img {
+    width: 1400px;
+}
+
+header .text-overlay {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header .text-overlay h2 {
+    text-shadow: 2px 2px #201f1f;
+    font-family: 'KoPub Batang';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 110px;
+    margin: 0;
+    padding: 0;
+}
+header .btn-shop {
+    border: 2px solid #fff;
+    height: 40px;
+    line-height: 42px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px #201f1f;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+header a:hover {
+    background-color: #fff;
+    color: #201f1f;
+    text-shadow: none;
+}
+
+/* atur section */
+section {
+    margin: auto;
+
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+/* about us */
+#aboutus {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+#aboutus img{
+    float: left;
+    margin-left: 200px;
+    margin-right: 80px;
+    width: 320px;
+    height: 400px;
+}
+#aboutus h3 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 30px;
+    color: #000000;
+}
+#aboutus p{
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    line-height: 1.5;
+    max-width: 400px;
+    color: #000000;
+}
+
+.btn-read, .btn-see, .btn-view {
+    font-family: 'Georgia';
+    font-size: 15px;
+    text-decoration: none;
+    background:#a89382 ;
+    border-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* why choose us */
+#choose h3 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 38px;
+    text-align: center;
+    color: #000000;
+    margin-left: 50px;
+}
+.icons {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 60px 0px 100px 20px;
+}
+.icons h6 {
+    background-color: #a89382;
+    width: 150px;
+    font-family: 'Georgia';
+    margin: auto;
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 100;
+}
+.icons img {
+    width: 100px;
+}
+.icons div {
+    text-align: center;
+    width: 26%;
+}
+.icons p {
+    width: 150px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* bg transisi */
+section.transition {
+    display: inline-block;
+    background: url('icons/Rectangle\ 26.png') no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100%;
+    padding: 100px;
+}
+
+/* our best seller */
+#bestseller h3 {
+    z-index: 1;
+    position: absolute;
+    width: 800px;
+    margin-right: 65px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 38px;
+    margin-left: 330px;
+    margin-top: 40px;
+    text-align: right;
+    color: #000000;
+  
+}
+.best-seller-img img{
+    display: inline-flex;
+    z-index: -1;
+    width: 1010px;
+    height: 750px;
+    margin-left: 130px;
+}
+.btn-see {
+    margin-left: 140px;
+}
+
+/* shop by category */
+#category span {
+    float: left;
+    margin-left: 130px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 300;
+}
+.btn-view {
+    margin-left: 450px;
+}
+
+.category-img {
+    margin-left: 128px;
+}
+.img {
+    display: inline-block;
+}
+.img img {
+    width: 240px;
+    padding: 5px;
+}
+
+/* footer */
+footer {
+    padding: 30px 0px 30px 20px;
+    background-color: #dbdbdb;
+    color: #3d3c3c;
+}
+footer .layar-dalam div {
+    width: 20%;
+}
+
+
+@media(max-width:968px){
+    /* ini buat munculin icon hamburger */
+    .hamburger{
+        display: block;
+    }
+    /* ini buat munculin tanda X */
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    /* ini buat bikin navbar pas di minimize */
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: row;
+        background-color: #F9E0BB;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+}
